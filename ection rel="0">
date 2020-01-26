@@ -1,0 +1,24 @@
+[33mcommit a512112dc363208fd5b9d89f406b042c63ea8459[m[33m ([m[1;35mrefs/stash[m[33m)[m
+Merge: ac0fb93 1f1a101
+Author: sonugopal <sonugopal41@gmail.com>
+Date:   Sun Jan 26 22:26:05 2020 +0530
+
+    WIP on master: ac0fb93 event tab arranged
+
+[33mcommit 1f1a1017c6d15f9a5c01de2ee4215b0e4777c46a[m
+Author: sonugopal <sonugopal41@gmail.com>
+Date:   Sun Jan 26 22:26:05 2020 +0530
+
+    index on master: ac0fb93 event tab arranged
+
+[33mcommit ac0fb93997bc098e2375b91cc4eba8d17b2c9daf[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: sonugopal <sonugopal41@gmail.com>
+Date:   Sun Jan 26 22:02:23 2020 +0530
+
+    event tab arranged
+
+[33mcommit 82daa4d88b5c081a306d6c1487e4fc9c9c37739c[m
+Author: sonugopal <sonugopal41@gmail.com>
+Date:   Sun Jan 26 21:40:35 2020 +0530
+
+    Adding event details
