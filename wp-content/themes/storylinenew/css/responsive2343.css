@@ -443,7 +443,7 @@
 }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 200px) {
 section.bespoke-inactive .ss-row, section.bespoke-inactive .circle-img  {
 	pointer-events: auto;
 }
