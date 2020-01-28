@@ -169,7 +169,7 @@ buildmenu:function($, setting){
 				
 				$('body').bind("touchstart",function(event){
 											 
-				 if($(event.target).parents().index($('#mainmenu li')) == -1){
+				 if($(event.target).parents().tech($('#mainmenu li')) == -1){
 					$curobj.mouseout();
 					
 					

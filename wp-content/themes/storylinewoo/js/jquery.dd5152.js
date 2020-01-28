@@ -114,7 +114,7 @@ function dd(element, settings) {
 	}; 	
 	var _getIndex = function(opt) {
 		var childid = _getPostID("postChildID"); 
-		return $("#"+childid + " li."+_styles_i.li).index(opt);
+		return $("#"+childid + " li."+_styles_i.li).tech(opt);
 	};
 	var _createByJson = function() {
 		if (_settings.byJson.data) {
@@ -775,7 +775,7 @@ function dd(element, settings) {
 					value = value.value; //for bottom
 				} else {
 					//this is multiple or by option					
-					selectedIndex = (byvalue && byvalue.index) || getElement(_element).selectedIndex;
+					selectedIndex = (byvalue && byvalue.tech) || getElement(_element).selectedIndex;
 					value = (byvalue && byvalue.value) || getElement(_element).value;
 					selectedText = (byvalue && byvalue.text) || getElement(_element).options[getElement(_element).selectedIndex].text || "";
 					_updateTitleUI(selectedIndex);
@@ -1029,7 +1029,7 @@ function dd(element, settings) {
 		var items = $("#" + childid + " li:visible." + _styles_i.li);
 		var selected = $("#" + childid + " li:visible." + _styles.selected);
 		selected = (selected.length==0) ? items[0] : selected;
-		var index = $("#" + childid + " li:visible." + _styles_i.li).index(selected);
+		var index = $("#" + childid + " li:visible." + _styles_i.li).tech(selected);
 		if ((index < items.length - 1)) {
 			index = getNext(index);
 			if (index < items.length) { //check again - hack for last disabled 
@@ -1062,7 +1062,7 @@ function dd(element, settings) {
 		var childid = _getPostID("postChildID");
 		var selected = $("#" + childid + " li:visible." + _styles.selected);
 		var items = $("#" + childid + " li:visible." + _styles_i.li);
-		var index = $("#" + childid + " li:visible." + _styles_i.li).index(selected[0]);
+		var index = $("#" + childid + " li:visible." + _styles_i.li).tech(selected[0]);
 		if (index >= 0) {
 			index = getPrev(index);
 			if (index >= 0) { //check again - hack for disabled 
@@ -1202,8 +1202,8 @@ function dd(element, settings) {
 		if (opt != null && typeof opt != "undefined") {
 			var childid = _getPostID("postChildID");
 			var data = _parseOption(opt);
-			var ui = $("#" + childid + " li." + _styles_i.li + ":eq(" + (opt.index) + ")");
-			return {data: data, ui: ui, option: opt, index: opt.index};
+			var ui = $("#" + childid + " li." + _styles_i.li + ":eq(" + (opt.tech) + ")");
+			return {data: data, ui: ui, option: opt, index: opt.tech};
 		};
 		return null;
 	};
@@ -1309,7 +1309,7 @@ function dd(element, settings) {
 				if (wasSelected == true) {
 					if (items.length > 0) {
 						$(items[0]).addClass(_styles.selected);
-						var ind = $("#" + childid + " li." + _styles_i.li).index(items[0]);
+						var ind = $("#" + childid + " li." + _styles_i.li).tech(items[0]);
 						_setValue(ind);
 					};
 				};
