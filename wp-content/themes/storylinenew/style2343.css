@@ -5627,3 +5627,8 @@ ul ul .gglass.current_page_item, ul li .gglass.current-menu-item, .nav ul li.ggl
 .wpb_video_wrapper iframe{
 	
 }
+
+section.bespoke-slide .layer{
+	padding-left: 70px;
+	margin-right: 100px;
+}

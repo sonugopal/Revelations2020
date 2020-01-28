@@ -348,12 +348,22 @@
 .js .selectnav {
 	display: block;
 }
-.dk_container{ 
-	display: block!important; 
-	float:right;
-	margin-right:60px; 
-	margin-top:0px;  
-	right:0;
+	.dk_options_inner a, .dk_container a, .blackbody .dk_options_inner a{
+		color: #fff !important;
+	}
+.dk_container{
+	display: block !important;
+	float: right;
+	margin-right: 1px;
+	margin-top: -45px;
+	right: 0;
+	background:
+			#016175;
+	color:
+			#fff !important;
+	border: none;
+	border-color:
+			#016175;
 }  
 .ss-stand-alone{
 	max-width:100%;
