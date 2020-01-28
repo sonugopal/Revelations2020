@@ -2,7 +2,7 @@
     $( document ).ready( function() {
         $( '#your-profile' ).attr( 'enctype', 'multipart/form-data' );
 
-        // Disables upload buttons until files are selected
+        // Disables uploads buttons until files are selected
         ( function() {
             var button, input, fieldset = $( 'fieldset' );
 
